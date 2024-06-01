@@ -1,0 +1,146 @@
+/* Achievements Section Styles */
+#achievementsSection {
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    padding: 50px 0;
+    color: white;
+}
+
+#achievementsSection h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#achievementsSection table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#achievementsSection th, #achievementsSection td {
+    padding: 15px;
+    border: none;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+#achievementsSection th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+#achievementsSection tr:hover td {
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+}
+.about-nav {
+    background-color: #fff; /* Background color */
+    padding: 20px 0; /* Padding for content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+.about-nav .container {
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.about-nav .logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.about-nav .navbar-toggler {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.about-nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.about-nav .navbar-toggler-icon {
+    font-size: 2rem;
+}
+
+.about-nav .navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    color: #000 !important;
+    padding: 0 1.5rem !important;
+font-weight: bold;
+}
+
+.about-nav .navbar-nav .nav-item .nav-link:hover {
+    color: #4a90e2 !important; /* Change color on hover */
+}
+  nav>div {
+            padding: .4rem 0;
+        }
+.radius-50 {
+            border-radius: 1rem;
+        }
+ .menu:focus {
+            box-shadow: none;
+        }
+
+        .menu i {
+            color: #000;
+            font-size: 1.8rem;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem !important;
+            font-weight: bold;
+            color: #000;
+        }
+ .detail {
+            position: fixed;
+            bottom: 4rem;
+            text-align: center;
+        }
+
+        .detail,
+        .detail a {
+            color: #000;
+        }
+
+        .detail h2 {
+            font-size: 55px;
+        }
+
+        .detail a {
+            font-size: 20px;
+        }
+
+        .detail .arrow {
+            font-size: 20px;
+            animation: arrow 1s infinite;
+            transition: all .3s ease;
+        }
+
+        .contact {
+            background-color: #ecf200;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            font-weight: 500;
+        }
+
+        @keyframes arrow {
+            0% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(10px);
+            }
+        }

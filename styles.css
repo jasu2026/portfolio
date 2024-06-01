@@ -1,0 +1,203 @@
+/* General section styles */
+#aboutSection, #skillsSection {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Video section styles */
+.video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Specific table styles */
+#skillsSection {
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    padding: 50px 0;
+    color: white;
+}
+
+#skillsSection h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#skillsSection table {
+    width: 80%; /* Make the table take up 80% of the container's width */
+    max-width: 800px; /* Limit the table's maximum width */
+    border-collapse: separate; /* Separate borders */
+    border-spacing: 0 15px; /* Space between rows */
+    margin: 0 auto; /* Center the table */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better aesthetics */
+}
+
+#skillsSection th, #skillsSection td {
+    padding: 15px; /* Add padding to table cells */
+    border: none; /* Remove default borders */
+    text-align: left; /* Align text to the left */
+    background: rgba(255, 255, 255, 0.1); /* Light background for cells */
+    backdrop-filter: blur(10px); /* Blur effect for cells */
+    color: white;
+}
+
+#skillsSection th {
+    background: rgba(255, 255, 255, 0.2); /* Light background color for table headers */
+    font-weight: bold; /* Make the header text bold */
+}
+
+#skillsSection tr:hover td {
+    background: rgba(255, 255, 255, 0.2); /* Slightly darker background on hover */
+    transition: background 0.3s ease; /* Smooth transition effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #skillsSection table {
+        width: 100%; /* Full width on small screens */
+    }
+
+    #skillsSection th, #skillsSection td {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+}
+/* Navigation Styles for About Me Section */
+.about-nav {
+    background-color: #fff; /* Background color */
+    padding: 20px 0; /* Padding for content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+.about-nav .container {
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.about-nav .logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.about-nav .navbar-toggler {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.about-nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.about-nav .navbar-toggler-icon {
+    font-size: 2rem;
+}
+
+.about-nav .navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    color: #000 !important;
+    padding: 0 1.5rem !important;
+font-weight: bold;
+}
+
+.about-nav .navbar-nav .nav-item .nav-link:hover {
+    color: #4a90e2 !important; /* Change color on hover */
+}
+  nav>div {
+            padding: .4rem 0;
+        }
+.radius-50 {
+            border-radius: 1rem;
+        }
+ .menu:focus {
+            box-shadow: none;
+        }
+
+        .menu i {
+            color: #000;
+            font-size: 1.8rem;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem !important;
+            font-weight: bold;
+            color: #000;
+        }
+ .detail {
+            position: fixed;
+            bottom: 4rem;
+            text-align: center;
+        }
+
+        .detail,
+        .detail a {
+            color: #000;
+        }
+
+        .detail h2 {
+            font-size: 55px;
+        }
+
+        .detail a {
+            font-size: 20px;
+        }
+
+        .detail .arrow {
+            font-size: 20px;
+            animation: arrow 1s infinite;
+            transition: all .3s ease;
+        }
+
+        .contact {
+            background-color: #ecf200;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            font-weight: 500;
+        }
+
+        @keyframes arrow {
+            0% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(10px);
+            }
+        }

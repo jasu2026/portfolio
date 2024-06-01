@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid container-lg" id="round-onclick">
+                <a href="index.html"><img src="https://i.ibb.co/tPsyT7N/004cf7a2-60b9-44a5-a81f-5365e41d20bb.jpg" alt="Logo" border="0" height=50 width=50></a>
+                <button class="navbar-toggler menu border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list" id="menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="achievements.html">Achievements</a>
+                        </li>
+         
+                    </ul>
+                    <button class="contact" onclick="toggleContactForm()">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <div class="video-section position-relative">
+        <video autoplay muted loop id="myVideo">
+            <source src="https://video.wixstatic.com/video/c0bbc5_ea3fdc8d953b4dbcab20a021d2ef1389/1080p/mp4/file.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="container text-center text-white video-content">
+            <h2 class="mb-3 fw-bold"></h2>
+        
+    </div>
+
+    <!-- About Section -->
+    <section id="aboutSection" class="d-flex justify-content-center align-items-center text-center">
+        <div class="container">
+            <h2>About Me</h2>
+            <p><b>
+               Hi there! I'm Jaswanth, and I'm really passionate about web development. What does that mean? Well, it's all about building websites that look great and work smoothly. I love making websites because it lets me be creative and solve problems at the same time.</p>
+<p>
+I studied computer science, which helps me understand the technical side of things. But what really gets me excited is the design aspect. I have a knack for making websites that not only function well but also look really nice.</p>
+<p>
+Whether I'm working on a small project just for fun or a big application for a client, my main goal is always the same: to make sure that whoever uses the website has a great experience. That means it should be easy to use, look good on any device, and be efficient so it loads quickly.</p>
+<p>
+In a nutshell, web development is not just a job for me—it's my passion. I love using my skills to create websites that people enjoy using.
+           </b> </p>
+        </div>
+</div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skillsSection" class="d-flex justify-content-center align-items-center text-center">
+        <div class="container">
+            <h2>Skills</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        function toggleContactForm() {
+            var googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeP7JG3pMnsY1B79f4lzMEt462pCrcYAiqA_YUG-naM1bRK7Q/viewform?embedded=true';
+            window.open(googleFormUrl, '_blank');
+        }
+    </script>
+</body>
+
+</html>
